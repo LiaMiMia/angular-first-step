@@ -1,0 +1,42 @@
+<h1>Premier utilisateur</h1>
+<p>une courte description de notre premier utilisateur</p>
+<ul>
+    <li>Nom : {{ nom }}</li>
+    <li>Age : {{ age }}</li>
+    <li>Hobby: 
+        <ul>
+        <li>{{ hobby.hobbyUn }}</li>
+        <li>{{ hobby.hobbyDeux }}</li>
+        <li>{{ hobby.hobbyTrois }}</li>    
+        </ul>
+    </li>
+    <li>email : {{ email }}</li>
+</ul>
+
+<button (click)="onClick()">Plus d'informations</button>
+
+<h1>Editer</h1>
+<form action="">
+    <div>
+        <label for="nom">Nom</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="hobbyUn">Un</label>
+        <input type="text">
+    </div>
+    <div>
+        <label for="hobbyDeux">Deux</label><input type="text">
+    </div>
+    <div>
+        <label for="hobbyTrois">trois</label><input type="text">
+    </div>
+    <div>
+        <label for="email">email</label>
+        <input type="email">
+    </div>
+</form>
